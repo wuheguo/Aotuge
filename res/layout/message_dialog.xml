@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@null"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="@dimen/customdialog_width"
+        android:layout_height="@dimen/customdialog_height"
+        android:background="@drawable/alterdialog_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+        
+        
+        <TextView
+            android:id="@+id/alertdialog_title"
+            android:layout_width="fill_parent"
+            android:layout_height="32dp"
+            android:layout_marginLeft="10dp"
+            android:gravity="center_vertical"
+            android:text="温馨小提醒"
+            android:textColor="#949494"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/alertdialog_message"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:minHeight="60dp"
+            android:text="你真的要退出登录吗？"
+            android:textColor="#ff6400"
+            android:textSize="18sp" />
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="0.5dp"
+            android:background="#cccccc" />
+
+            <Button
+                android:layout_marginTop="10dp"
+                android:id="@+id/alertdialog_NegativeButton"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:background="@color/custom_dialog_right_bn"
+                android:gravity="center"
+                android:text="退出"
+                android:textColor="@color/custom_dialog_right_text"
+                android:textSize="15sp" />
+    </LinearLayout>
+
+</LinearLayout>

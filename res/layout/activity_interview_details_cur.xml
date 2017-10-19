@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_bg">
+
+    <include
+        android:id="@+id/header_bar"
+        layout="@layout/header" />
+     <LinearLayout  
+            android:id="@+id/rl_bn"
+            android:layout_alignParentBottom="true" 
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+              <Button
+                android:id="@+id/bn_left"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/interview_left_bn_bg"
+                android:gravity="center"
+                android:text="取消面试"
+                android:textColor="@color/font_right_color"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="15sp" />
+
+              <Button
+                  android:id="@+id/bn_mid"
+                  android:layout_width="0dp"
+                  android:layout_height="40dp"
+                  android:layout_weight="1"
+                  android:background="@drawable/interview_left_bn_bg"
+                  android:gravity="center"
+                  android:text="申请换时间"
+                  android:textColor="@color/font_right_color"
+                  android:textSize="15sp"
+                  android:visibility="gone" />
+
+            <Button
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:id="@+id/bn_right"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+              
+                android:background="@drawable/interview_right_bn_bg"
+                android:gravity="center"
+                android:text="已参加"
+                android:textColor="@color/whites"
+                android:textSize="15sp" />
+              
+          </LinearLayout>
+    <RelativeLayout 
+        android:id="@+id/l_List_bom" 
+         android:visibility="gone"
+        android:layout_alignParentBottom="true" 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+  
+    
+    
+      <RelativeLayout 
+    android:id="@+id/list_bar"
+   
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/top_bg_height"
+    android:background="@color/header_top" >
+    
+    <TextView
+        android:id="@+id/tv_title_bar_text"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="left|center_vertical"
+        android:text="你当天还有以下面试参加"
+        android:textColor="@color/whites"
+        android:textSize="18sp" 
+        android:layout_marginLeft="10dp"/>
+    <RelativeLayout
+        android:id="@+id/tab_right_layout"
+        android:layout_width="120dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_height="match_parent" >
+         <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/search"
+            android:contentDescription="@string/app_name"
+           />
+    </RelativeLayout>
+</RelativeLayout>
+<com.aotu.baseview.CustomListView 
+        android:id="@+id/list_view"
+        android:layout_below="@+id/list_bar"
+          android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_below="@+id/header_bar"
+        android:layout_above="@+id/rl_bn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/view_bg"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tx_ad"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                 android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="按时面试并反馈,将报销最高50元打车费"
+                android:textColor="@color/font_right_color"
+                android:textSize="@dimen/font_16" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/devide_line" />
+
+            <include layout="@layout/interview_compay_info" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="@color/devide_line" />
+
+            <LinearLayout
+                android:id="@+id/my_collect_tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="@color/whites"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/tv_tab_left"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_tab_bg"
+                    android:gravity="center"
+                    android:text="进行到"
+                    
+                    android:textColor="@color/member_upgrade_tab_color"
+                    android:textSize="@dimen/font_18" />
+
+                <TextView
+                    android:layout_width="1px"
+                    android:layout_height="match_parent"
+                    android:background="@color/devide_line" />
+
+                <TextView
+                    android:id="@+id/tv_tab_right"
+                   
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/custom_tab_bg"
+                    android:gravity="center"
+                    android:text="注意事项"
+                    android:textColor="@color/member_upgrade_tab_color"
+                    android:textSize="@dimen/font_18" />
+            </LinearLayout>
+            
+            <LinearLayout  
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:orientation="vertical"
+                 
+                android:layout_height="wrap_content">
+            <FrameLayout
+                android:id="@+id/fragment"
+                android:layout_width="match_parent"
+               android:layout_marginTop="5dp"
+                android:layout_height="300dp">
+            </FrameLayout>
+            
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

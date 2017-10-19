@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:minHeight="50dp"
+ 
+    android:descendantFocusability="blocksDescendants"
+    android:background="@color/white"
+    android:orientation="horizontal" >
+    
+  
+    
+        <TextView 
+            android:id="@+id/tx_cv_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.0"
+            android:layout_marginLeft="10dp"
+            android:text="nihao"
+            android:gravity="left|center_vertical"
+            android:textColor="@color/font_strong_color"
+            android:textSize="@dimen/font_16"/>
+        
+         <Button 
+            android:id="@+id/bn_delete"
+            android:layout_weight="3.0"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background = "@drawable/custom_bn_bg"
+            android:layout_marginRight="17.0dip"
+            android:text="删除"
+            android:textSize = "15sp"
+            android:textColor="@color/white"
+             />
+        
+       
+   
+          
+</LinearLayout>

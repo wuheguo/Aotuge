@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header_bar"
+        layout="@layout/header" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dip" >
+
+        <EditText
+            android:id="@+id/ed_register_phone_number"
+            style="@style/customeditmoblie"
+            android:hint="手机号" />
+
+        <Button
+            android:id="@+id/bn_register_phone_number_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:background="@drawable/icon_clear"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dip" >
+
+        <EditText
+            android:id="@+id/ed_code"
+            style="@style/customeditcode"
+            android:hint="请输入验证码" />
+
+        <Button
+            android:id="@+id/bn_get_code"
+            style="@style/custombutton4"
+            android:layout_marginLeft="21dp"
+            android:layout_toRightOf="@+id/ed_code"
+            android:text="点击获取验证码" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="17.0dip"
+        android:layout_marginLeft="17.0dip"
+        android:layout_marginRight="17.0dip" >
+
+        <ImageView
+            android:id="@+id/check_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/btn_bg_checked"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/register_info1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/check_image"
+            android:text="同意"
+            android:textColor="@color/font_weak_coloe"
+            android:textSize="@dimen/font_15" />
+
+        <TextView
+            android:id="@+id/tx_register_protocol"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/register_info1"
+            android:text="凹凸招聘用户注册协议"
+            android:textColor="@color/font_right_color"
+            android:textSize="@dimen/font_15" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bn_next"
+        style="@style/custombutton"
+        android:layout_marginTop="24dp"
+        android:enabled="false"
+        android:text="下一步" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="17.0dip"
+        android:layout_marginRight="17.0dip"
+        android:layout_height="24dp"
+        android:layout_marginTop="24dp" >
+        
+         <TextView
+            android:id="@+id/info1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+           
+            android:text="遇到问题?"
+            android:textColor="@color/font_weak_coloe"
+            android:textSize="@dimen/font_15" />
+           <TextView
+            android:id="@+id/tx_call_kefu"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/info1"
+            android:gravity="center|left"
+            android:text="联系客服"
+            android:textColor="@color/font_right_color"
+            android:textSize="@dimen/font_15" />
+
+        <TextView
+            android:id="@+id/tx_logon"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="直接登陆"
+            android:textColor="@color/font_right_color"
+            android:textSize="@dimen/font_15" />
+    </RelativeLayout>
+
+</LinearLayout>

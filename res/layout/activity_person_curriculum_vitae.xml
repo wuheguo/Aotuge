@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:windowSoftInputMode="adjustPan"
+    android:background="@color/view_bg" >
+    <include
+        android:id="@+id/header_bar"
+        layout="@layout/header" />
+    <RelativeLayout 
+        android:id="@+id/rl_edit"
+         android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/header_bar"
+        android:focusable="true"   
+        android:focusableInTouchMode="true">
+    <EditText
+            
+            android:id="@+id/ed_cv_title"
+            style="@style/customedittext2"
+            android:hint="简历标题" />
+    </RelativeLayout>
+    <TextView    
+        android:id="@+id/tx_line"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+          android:layout_below="@+id/rl_edit"
+        android:background="@color/devide_line"/>
+     <Button  
+         
+        android:id="@+id/bn_add"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:text="保存简历"
+        style="@style/custombutton"/>
+      <com.aotu.baseview.CustomListView 
+     android:id="@+id/list_view"
+     android:layout_above="@+id/bn_add"
+     android:layout_below="@+id/tx_line"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:dividerHeight="10dp"
+     android:divider="#F5F5F5"
+     />
+      
+</RelativeLayout>

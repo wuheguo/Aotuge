@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header_bar"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/top_bg_height"
+    android:background="@color/header_top" >
+    
+      <RelativeLayout
+        android:id="@+id/back_layout"
+        android:layout_width="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:onClick="onBack"
+        android:layout_height="match_parent">
+         
+        <ImageView
+            android:id="@+id/back_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/back_icon"
+            android:contentDescription="@string/app_name" />
+     </RelativeLayout>
+     
+       <RelativeLayout
+        android:id="@+id/left_menu_layout"
+        android:layout_width="120dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:onClick="onMenu"
+        android:visibility="invisible" 
+        android:layout_height="match_parent">
+         
+        <ImageView
+          
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="16dp"
+            android:background="@drawable/main_home_head_left"
+            android:contentDescription="@string/app_name"
+           />
+     </RelativeLayout>
+
+  
+
+    <TextView
+        android:id="@+id/tv_title_bar_text"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:textColor="@color/whites"
+        android:textSize="18sp" 
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:ellipsize="end"
+        android:singleLine="true"/>
+    
+
+   <RelativeLayout
+        android:id="@+id/right_layout"
+        android:layout_width="120dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerInParent="true"
+        android:layout_height="match_parent" >
+         <ImageView
+          
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_marginRight="16dp"
+            android:background="@drawable/search"
+            android:contentDescription="@string/app_name"
+           />
+        
+    </RelativeLayout>
+    
+       <Button
+            android:id="@+id/bn_right"
+            android:layout_width="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:layout_height="match_parent"
+            android:layout_marginRight="16dp"
+            android:text="确定"
+            android:gravity="center_vertical|right"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_15"
+            android:background="@color/custom_dialog_right_bn"
+            android:visibility="invisible" />
+
+</RelativeLayout>

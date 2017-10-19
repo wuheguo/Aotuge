@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" >
+    
+   <FrameLayout 
+    android:id="@+id/buttom_bar_group"
+    android:layout_width="fill_parent"
+    android:layout_height="50dp"
+    android:layout_alignParentBottom="true"
+    android:background="@color/white" >
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.0px"
+        android:background="@color/devide_line" />
+
+  <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="fill_parent"
+        android:layout_height="50.0dip"
+        android:layout_marginTop="3.0dip"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/buttom_main"
+            style="@style/btn_bottom_bar"
+            android:checked="true"
+            android:drawableTop="@drawable/selector_btn_bottom_tab_1"
+            android:text="首页"
+            android:textColor="@drawable/selector_btn_bottom_tab" />
+        
+        <RadioButton
+            android:id="@+id/buttom_work"
+            style="@style/btn_bottom_bar"
+            android:drawableTop="@drawable/selector_btn_bottom_tab_2"
+            android:text="找工作"
+            android:textColor="@drawable/selector_btn_bottom_tab" />
+         <RadioButton
+            android:id="@+id/buttom_suangxuanview"
+            style="@style/btn_bottom_bar"
+            android:drawableTop="@drawable/selector_btn_bottom_tab_5"
+            android:text="双选会"
+            android:textColor="@drawable/selector_btn_bottom_tab" />
+        <RadioButton
+            android:id="@+id/buttom_interview"
+            style="@style/btn_bottom_bar"
+            android:drawableTop="@drawable/selector_btn_bottom_tab_3"
+            android:text="面试"
+            android:textColor="@drawable/selector_btn_bottom_tab" />
+        
+          <RadioButton
+            android:id="@+id/buttom_my"
+            style="@style/btn_bottom_bar"
+            android:drawableTop="@drawable/selector_btn_bottom_tab_4"
+            android:text="我的"
+            android:textColor="@drawable/selector_btn_bottom_tab" />
+    </RadioGroup>
+    </FrameLayout>
+     <FrameLayout
+       android:layout_above="@+id/buttom_bar_group"
+       android:id="@+id/fragment"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" >
+     </FrameLayout>
+   
+</RelativeLayout>

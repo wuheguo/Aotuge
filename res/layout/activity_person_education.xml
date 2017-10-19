@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header_bar"
+        layout="@layout/header" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" 
+        android:background="@color/whites">
+
+        <ImageView
+            android:id="@+id/title_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/home_list_item_title"
+            android:contentDescription="@string/app_name" />
+
+        <RelativeLayout
+            android:id="@+id/rl_next"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" >
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tx_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/title_image"
+            android:gravity="center_vertical"
+            android:text="教育经历"
+            android:textColor="@color/font_strong_color"
+            android:textSize="@dimen/font_16" />
+
+    </RelativeLayout>
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/devide_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+       
+         android:background="@color/whites" >
+
+        <TextView
+            android:id="@+id/tx_company_tab"
+            android:layout_width="80dp"
+             android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:text="学  校"
+            android:textColor="@color/custom_dialog_left_text"
+            android:textSize="@dimen/font_16" />
+
+        <TextView
+            android:id="@+id/et_company"
+            style="@style/customtext1"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tx_company_tab"
+            android:hint="点击选择" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        
+         android:background="@color/whites">
+
+        <TextView
+            android:id="@+id/tx_title_tab"
+            android:layout_width="80dp"
+            android:layout_marginLeft="10dp" 
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:text="院  系"
+            android:textColor="@color/custom_dialog_left_text"
+            android:textSize="@dimen/font_16" />
+
+        <EditText
+            android:id="@+id/et_title"
+            style="@style/customedittext"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tx_title_tab"
+            android:ems="10"
+            android:hint="请填写" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+      
+         android:background="@color/whites" >
+
+        <TextView
+            android:id="@+id/tx_specialty_tab"
+            android:layout_width="80dp"
+              android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:text="专  业"
+            android:textColor="@color/custom_dialog_left_text"
+            android:textSize="@dimen/font_16" />
+
+        <EditText
+            android:id="@+id/et_specialty"
+            style="@style/customedittext"
+            android:layout_toRightOf="@+id/tx_specialty_tab"
+            android:hint="请填写" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        
+         android:background="@color/whites" >
+
+        <TextView
+            android:id="@+id/tx_education_tab"
+            android:layout_width="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:text="学  历"
+            android:textColor="@color/custom_dialog_left_text"
+            android:textSize="@dimen/font_16" />
+
+        <TextView
+            android:id="@+id/et_education"
+            style="@style/customtext1"
+            android:layout_toRightOf="@+id/tx_education_tab"
+            android:hint="点击选择" />
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        
+         android:background="@color/whites" >
+
+        <TextView
+            android:id="@+id/tx_start_date_school"
+            android:layout_width="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:text="入校时间"
+            android:textColor="@color/custom_dialog_left_text"
+            android:textSize="@dimen/font_16" />
+
+        <TextView
+            android:id="@+id/et_start_date_school"
+            style="@style/customtext1"
+            android:layout_toRightOf="@+id/tx_start_date_school"
+            android:hint="点击选择" />
+    </RelativeLayout>
+    
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        
+         android:background="@color/whites" >
+
+        <TextView
+            android:id="@+id/tx_end_date_school"
+            android:layout_width="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:text="毕业时间"
+            android:textColor="@color/custom_dialog_left_text"
+            android:textSize="@dimen/font_16" />
+
+        <TextView
+            android:id="@+id/et_end_date_school"
+            style="@style/customtext1"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/tx_end_date_school"
+            android:hint="点击选择" />
+
+    </RelativeLayout>
+  <TextView
+      
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="15dp"
+        android:background="@color/devide_line" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+         android:background="@color/whites" >
+
+        <ImageView
+            android:id="@+id/title_image1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/home_list_item_title"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+          
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/title_image1"
+            android:gravity="center_vertical"
+            android:text="更多描述"
+            android:textColor="@color/font_strong_color"
+            android:textSize="@dimen/font_16" />
+
+     
+    </RelativeLayout>
+    <LinearLayout
+         android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+         android:background="@color/whites" >
+        <TextView
+      
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/devide_line" />
+
+    <EditText
+        android:id="@+id/et_workinternship_info"
+        style="@style/customedittext1"
+        android:text="" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+         android:background="@color/whites"
+         android:layout_marginLeft="17dp"
+         android:layout_marginRight="17dp"
+        android:layout_marginTop="15dp" >
+
+     <Button
+                android:id="@+id/bn_delete"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:background="@color/custom_dialog_left_bn"
+                android:gravity="center"
+                android:text="删除"
+                android:textColor="@color/custom_dialog_left_text"
+                
+                android:textSize="15sp" />
+
+          
+
+            <Button
+                android:layout_marginLeft="10dp"
+                android:id="@+id/bn_save"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:background="@color/custom_dialog_right_bn"
+                android:gravity="center"
+                android:text="保存"
+                android:textColor="@color/custom_dialog_right_text"
+                android:textSize="15sp" />
+    </LinearLayout>
+        
+    </LinearLayout>
+      
+</LinearLayout>

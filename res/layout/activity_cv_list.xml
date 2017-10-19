@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_bg">
+
+    <include
+        android:id="@+id/header_bar"
+        layout="@layout/header" />
+    
+    <Button  
+        android:id="@+id/bn_add"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:text="新增简历"
+        style="@style/custombutton"/>
+     
+    <RelativeLayout
+      
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_below="@+id/header_bar"
+        android:layout_above="@+id/bn_add" >
+
+        <com.aotu.baseview.CustomListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:divider="@color/devide_line"
+            android:dividerHeight="1.0px"
+            android:layout_height="match_parent" />
+
+       
+    </RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/rl_no_cv"
+            android:layout_below="@+id/header_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <ImageView
+                android:id="@+id/iv_no_cv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:background="@drawable/no_cv"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY" />
+            <TextView
+                android:id="@+id/tv_no_cv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_no_cv"
+                android:layout_centerHorizontal="true"
+                android:text="还没有简历，赶紧写简历吧！"
+                android:textColor="@color/gray_font" />
+            <Button
+                android:id="@+id/bn_no_cv"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tv_no_cv"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/custom_dialog_right_bn"
+                android:gravity="center"
+                android:text="写简历"
+                android:textColor="@color/custom_dialog_right_text"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    
+</RelativeLayout>

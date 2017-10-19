@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_bg">
+
+    <include
+        android:id="@+id/header_bar"
+        layout="@layout/header" />
+    
+   
+     
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@+id/header_bar" >
+        <com.aotu.baseview.CustomListView
+            android:id="@+id/list_view"
+            android:layout_width="match_parent"
+            android:divider="@color/devide_line"
+            android:dividerHeight="5dp"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+</RelativeLayout>

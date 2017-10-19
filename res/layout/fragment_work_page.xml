@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_bg" >
+
+    <include
+        android:id="@+id/header_bar"
+        layout="@layout/header" />
+    <RelativeLayout 
+        android:id="@+id/rl_tab"
+        android:layout_below="@+id/header_bar" 
+        android:layout_width="match_parent"
+        android:background="@color/white"
+        android:layout_height="40dp">
+        <TextView 
+            android:id="@+id/tx_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="求职意向"
+            android:gravity="center_vertical"
+            android:textColor="@color/font_right_color"
+            android:textSize="@dimen/font_16"/>
+          
+          <RelativeLayout android:id="@+id/rl_next"
+              android:layout_width="100dp"
+              android:layout_height="match_parent"
+              android:layout_alignParentRight="true">
+              <ImageView
+              android:id="@+id/im_next"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:layout_alignParentRight="true"
+              android:background="@drawable/arrows_down"
+              android:layout_centerVertical="true"
+              android:layout_marginRight="10dp"
+              android:contentDescription="@string/app_name"/>
+          </RelativeLayout>
+    </RelativeLayout>
+   
+       <Button  
+        android:id="@+id/bn_add"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:text="申请职位"
+        style="@style/custombutton"/>
+  
+    
+    <RelativeLayout
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/rl_tab"
+        android:layout_above="@+id/bn_add"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <com.aotu.baseview.CustomListView
+            android:id="@+id/list_view"
+            android:divider="@color/devide_line"
+            android:dividerHeight="1.0px"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        
+   
+          
+          
+    </RelativeLayout>
+     <LinearLayout 
+        android:id="@+id/l_intention_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_tab" 
+        android:orientation="vertical"
+        android:background="@color/white">
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/devide_line" />
+    <com.aotu.baseview.CustomListView
+            android:id="@+id/intention_list_view"
+            android:layout_width="match_parent"
+            android:dividerHeight="1px"
+            android:divider="@color/devide_line"
+            android:layout_height="wrap_content" />
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:background="#f5f5f5"
+        android:layout_height="40dp">
+          <RelativeLayout android:id="@+id/rl_add"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_alignParentRight="true">
+              
+              <ImageView
+              android:id="@+id/im_add"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:layout_alignParentRight="true"
+              android:background="@drawable/black_next"
+              android:layout_centerVertical="true"
+              android:layout_marginRight="10dp"
+              android:visibility="gone"
+              android:contentDescription="@string/app_name"/>
+                <TextView 
+          
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:text="添加/修改"
+            android:gravity="center_vertical"
+            android:textColor="@color/custom_dialog_right_bn"
+            android:textSize="@dimen/font_16"/>
+          </RelativeLayout>
+       
+    </RelativeLayout>
+</LinearLayout>
+
+      <RelativeLayout
+            android:id="@+id/rl_no_intention"
+             android:layout_below="@+id/rl_tab" 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/iv_no_intention"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/no_intention"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_no_intention"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_no_intention"
+                android:layout_centerHorizontal="true"
+                android:text="没有求职意向"
+                android:textColor="@color/gray_font" />
+
+            <Button
+                android:id="@+id/bn_no_intention"
+                android:layout_width="130dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/tv_no_intention"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="@color/custom_dialog_right_bn"
+                android:gravity="center"
+                android:text="去添加"
+                android:textColor="@color/custom_dialog_right_text"
+                android:textSize="15sp" />
+        </RelativeLayout>
+        
+       <RelativeLayout
+            android:id="@+id/rl_no_work"
+            android:layout_below="@+id/rl_tab"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/iv_no_work"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/no_intention"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_no_work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_no_work"
+                android:layout_centerHorizontal="true"
+                android:text="没有搜索到你想要的工作"
+                android:textColor="@color/gray_font" />
+        </RelativeLayout>
+
+</RelativeLayout>

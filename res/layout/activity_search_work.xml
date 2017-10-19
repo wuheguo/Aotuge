@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header_bar"
+        layout="@layout/header" />
+
+    <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="18dp"
+          android:layout_marginTop="10dp"
+         android:text="意向选择"/>
+    
+      <RelativeLayout
+        android:id="@+id/r_intention"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dip" >
+
+        <TextView
+            android:id="@+id/tx_position"
+            style="@style/customText"
+            
+            android:hint="不限" />
+
+      <ImageView
+            android:id="@+id/bn_position_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25.0dip"
+            android:background="@drawable/next_side"/>
+    </RelativeLayout>
+   
+
+     <TextView
+       
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="18dp"
+          android:layout_marginTop="15dp"
+         android:text="工作地点" />
+    
+      <RelativeLayout
+          android:id="@+id/r_cities"
+          android:layout_width="fill_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="7dip" >
+
+          <TextView
+              android:id="@+id/tx_city"
+              style="@style/customText"
+              android:hint="不限" />
+           <ImageView
+           
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25.0dip"
+            android:background="@drawable/next_side"/>
+      </RelativeLayout>
+
+     <TextView
+        
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="18dp"
+         android:layout_marginTop="15dp"
+         android:text="薪资范围" />
+    
+      <RelativeLayout
+        android:id="@+id/r_salary"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dip" >
+
+     
+
+      <TextView
+          android:id="@+id/tx_salary"
+          style="@style/customText"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:hint="不限" />
+        <ImageView
+           
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25.0dip"
+            android:background="@drawable/next_side"/>
+       
+      
+
+    </RelativeLayout>
+       <TextView
+     
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="18dp"
+          android:layout_marginTop="15dp"
+         android:text="职位类型" />
+
+       <RelativeLayout
+           android:id="@+id/r_workType"
+           android:layout_width="fill_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="7dip" >
+
+           
+
+           <TextView
+               android:id="@+id/tx_work_type"
+               style="@style/customText"
+               android:layout_alignParentTop="true"
+               android:layout_centerHorizontal="true"
+               android:hint="不限" />
+           <ImageView
+           
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25.0dip"
+            android:background="@drawable/next_side"/>
+       </RelativeLayout>
+
+    <Button
+        android:id="@+id/bn_search"
+        style="@style/custombutton"
+        android:layout_marginTop="24dp"
+        android:text="搜索" />
+</LinearLayout>

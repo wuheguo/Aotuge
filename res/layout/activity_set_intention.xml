@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include
+        android:id="@+id/header_bar"
+        layout="@layout/header" />
+    <ScrollView 
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         <LinearLayout  
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="15dp"
+        android:text="求职方向名称" />
+
+    <EditText
+        android:id="@+id/ed_directions"
+        style="@style/customText"
+        android:layout_marginTop="10dp"
+        android:layout_height="35dp"
+        android:ems="10"
+        android:hint="请填写本求职位方向" >  
+    </EditText>
+  <TextView
+        
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="18dp"
+         android:layout_marginTop="15dp"
+         android:text="意向选择"/>
+    
+      <RelativeLayout
+        android:id="@+id/r_intention"
+         android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+     
+
+      <TextView
+          android:id="@+id/tx_info1"
+          style="@style/customText"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:hint="请选择您意向的职位" />
+       <ImageView
+         
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25.0dip"
+            android:background="@drawable/next_side"/>
+
+    </RelativeLayout>
+   
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="18dp"
+         android:layout_marginTop="15dp"
+         android:text="工作地点" />
+    
+      <RelativeLayout
+        android:id="@+id/r_city"
+         android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+    
+
+      <TextView
+          android:id="@+id/tx_info2"
+          style="@style/customText"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:hint="不限" />
+        <ImageView
+         
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25.0dip"
+            android:background="@drawable/next_side"/>
+
+    </RelativeLayout>
+    
+     <TextView
+       
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="18dp"
+         android:layout_marginTop="15dp"
+         android:text="薪资范围" />
+    
+      <RelativeLayout
+        android:id="@+id/r_salary"
+         android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+             android:id="@+id/tx_info3"
+            style="@style/customText"
+            android:hint="不限" />
+
+        <ImageView
+         
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25.0dip"
+            android:background="@drawable/next_side"/>
+    </RelativeLayout>
+       <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="18dp"
+         android:layout_marginTop="15dp"
+         android:text="职位类型" />
+    
+      <RelativeLayout
+          android:id="@+id/r_workType"
+        android:layout_width="fill_parent"
+         android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tx_info4"
+            style="@style/customText"
+            android:hint="不限" />
+
+       <ImageView
+         
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25.0dip"
+            android:background="@drawable/next_side"/>
+    </RelativeLayout>
+     <TextView
+         
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="18dp"
+         android:layout_marginTop="15dp"
+         android:text="简历" />
+    
+      <RelativeLayout
+        android:id="@+id/r_cv"
+         android:layout_marginTop="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+        <TextView
+            android:id="@+id/tx_info5"
+            style="@style/customText"
+            android:hint="点击选择简历" />
+
+      <ImageView
+         
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="25.0dip"
+            android:background="@drawable/next_side"/>
+    </RelativeLayout>
+    <Button
+        android:id="@+id/bn_save"
+        style="@style/custombutton"
+        android:layout_marginTop="24dp"
+       
+        android:text="保存" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

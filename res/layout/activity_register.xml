@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_bg"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header_bar"
+        layout="@layout/header" />
+   
+ <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="27dip"
+        android:layout_marginLeft="17.0dip"
+        android:textSize="@dimen/font_15"
+        android:text="登陆密码"/>
+ 
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+           android:layout_marginTop="7dip">
+        
+
+        <EditText
+            android:id="@+id/ed_password"
+            style="@style/customeditpassword"
+            android:hint="登陆密码" />
+
+        <Button
+            android:id="@+id/bn_password_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:background="@drawable/icon_clear"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="17.0dip"
+        android:layout_marginTop="27dip"
+        android:text="个人信息"
+        android:textSize="@dimen/font_15" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dip" >
+
+        <EditText
+            android:id="@+id/ed_name"
+            style="@style/customeditname"
+            android:hint="姓名" />
+
+      <Button
+            android:id="@+id/bn_name_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20.0dip"
+            android:background="@drawable/icon_clear"
+            android:visibility="invisible" />
+    </RelativeLayout>
+
+     <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dip" >
+
+        <TextView
+            android:id="@+id/tx_school"
+            style="@style/customText"
+            android:hint="毕业院校" />
+
+       <ImageView 
+                  
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                      android:layout_marginRight="25.0dip"
+                     android:layout_alignParentRight="true"
+                     android:contentDescription="@string/app_name"
+                     android:layout_centerVertical="true"
+                     android:background="@drawable/next_side"/>
+    </RelativeLayout>
+    
+      <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dip" >
+
+        <TextView
+            android:id="@+id/tx_position"
+            style="@style/customText"
+            android:hint="意向职位" />
+
+     <ImageView 
+                  
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                      android:layout_marginRight="25.0dip"
+                     android:layout_alignParentRight="true"
+                     android:contentDescription="@string/app_name"
+                     android:layout_centerVertical="true"
+                     android:background="@drawable/next_side"/>
+    </RelativeLayout>
+    
+       <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dip" >
+
+        <TextView
+            android:id="@+id/tx_city"
+            style="@style/customText"
+            android:hint="意向城市" />
+
+       <ImageView 
+                  
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                      android:layout_marginRight="25.0dip"
+                     android:layout_alignParentRight="true"
+                     android:contentDescription="@string/app_name"
+                     android:layout_centerVertical="true"
+                     android:background="@drawable/next_side"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bn_register"
+        style="@style/custombutton"
+        android:layout_marginTop="24dp"
+        android:enabled="false"
+        android:text="完成" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="17.0dip"
+        android:layout_marginRight="17.0dip"
+        android:layout_height="24dp"
+        android:layout_marginTop="24dp" >
+        
+         <TextView
+            android:id="@+id/info1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+           
+            android:text="遇到问题?"
+            android:textColor="@color/font_weak_coloe"
+            android:textSize="@dimen/font_15" />
+           <TextView
+            android:id="@+id/tx_call_kefu"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/info1"
+            android:gravity="center|left"
+            android:text="联系客服"
+            android:textColor="@color/font_right_color"
+            android:textSize="@dimen/font_15" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/tx_logon"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:text="直接登陆"
+            android:textColor="@color/font_right_color"
+            android:textSize="@dimen/font_15" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" 
+        android:background="@color/whites">
+
+        <ImageView
+            android:id="@+id/title_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/home_list_item_title"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tx_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/title_image"
+            android:gravity="center_vertical"
+            android:text="联系信息"
+            android:textColor="@color/font_strong_color"
+            android:textSize="@dimen/font_16" />
+
+        <RelativeLayout
+            android:id="@+id/rl_next"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" >
+        </RelativeLayout>
+    </RelativeLayout>
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/devide_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+       
+         android:background="@color/whites" >
+
+        <TextView
+            android:id="@+id/tx_moblie_tab"
+            android:layout_width="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:text="手机"
+            android:textColor="@color/custom_dialog_left_text"
+            android:textSize="@dimen/font_16" />
+
+         <EditText
+            android:id="@+id/tx_moblie"
+            android:layout_toRightOf="@+id/tx_moblie_tab"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:hint="请写入手机号"
+            android:textColor="@color/font_text_color"
+            android:textSize="@dimen/font_16"
+            android:inputType="number"
+            android:maxLength="11"
+            android:background="@drawable/custom_edit_text_bg"
+            android:textColorHint="#afafaf"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/whites">
+
+        <TextView
+            android:id="@+id/tx_email_tab"
+            android:layout_width="40dp"
+            android:layout_marginLeft="10dp" 
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:text="邮箱"
+            android:textColor="@color/custom_dialog_left_text"
+            android:textSize="@dimen/font_16" />
+
+        <EditText
+            android:id="@+id/tx_email"
+            android:layout_toRightOf="@+id/tx_email_tab"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:gravity="left|center_vertical"
+            android:hint="邮箱地址"
+            android:textColor="@color/font_text_color"
+            android:textSize="@dimen/font_16"
+            android:inputType="none"   
+            android:background="@drawable/custom_edit_text_bg"
+            android:textColorHint="#afafaf" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="40dp"
+    android:background="@drawable/custom_list_item_bg"
+    android:descendantFocusability="blocksDescendants">
+
+    <Button
+        android:id="@+id/bn_delete"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/tixian_bn_bg"
+        android:gravity="center"
+        android:text="删除"
+        android:visibility="invisible"
+        android:textColor="@color/custom_dialog_right_text"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/rl_info"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_toLeftOf="@+id/bn_delete"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tx_info1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:gravity="left|center_vertical"
+            android:text="中国美团"
+            android:textColor="@color/font_strong_color"
+            android:textSize="@dimen/font_16" />
+    </LinearLayout>
+   <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_alignParentBottom="true"
+        android:background="@color/devide_line" />
+</RelativeLayout>

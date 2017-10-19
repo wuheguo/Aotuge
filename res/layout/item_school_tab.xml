@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="40.5dp"
+    android:background="@drawable/custom_list_item_bg"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+        <TextView 
+            android:id="@+id/tx_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="当前城市: "
+            android:gravity="center_vertical"
+            android:textColor="@color/font_strong_color"
+            android:textSize="@dimen/font_16"/>
+          <TextView 
+            android:id="@+id/tx_city"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="北京"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/tx_tab"
+            android:textColor="@color/font_tab_color"
+            android:textSize="@dimen/font_16"/>
+          <RelativeLayout android:id="@+id/rl_next"
+              android:layout_width="100dp"
+              android:layout_height="match_parent"
+              android:layout_alignParentRight="true">
+              <ImageView
+              android:id="@+id/im_next"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:layout_alignParentRight="true"
+              android:background="@drawable/next_side"
+              android:layout_centerVertical="true"
+              android:layout_marginRight="10dp"
+              android:contentDescription="@string/app_name"/>
+            <TextView 
+            android:id="@+id/tx_change_city"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:text="切换"
+            android:layout_toLeftOf="@+id/im_next"
+             android:layout_marginRight="10dp"
+            android:gravity="right|center_vertical"
+            android:textColor="@color/font_tab_color"
+            android:textSize="@dimen/font_16"/>
+              
+          </RelativeLayout>
+          
+          
+    </RelativeLayout>
+     
+    
+</LinearLayout>

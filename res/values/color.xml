@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="custom_dialog_left_bn">#e6e6e6</color>
+    <color name="custom_dialog_right_bn">#ff6400</color>
+  
+    <color name="custom_dialog_left_text">#999999</color>
+    <color name="custom_dialog_right_text">#ffffff</color>
+    <color name="header_top">#ff6400</color>
+    
+    <color name="divider_color">#999999</color>
+    
+    <color name="blue">#499BF7</color>
+    <color name="whites">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="refresh_head_bg">#2B2B2B</color>
+    <color name="transparent">#00000000</color>
+    
+    <color name="bottom_tab_selected">#2e6eb8</color>
+    <color name="bottom_tab">#ff7c7c7c</color>
+    
+    <color name="view_bg">#F5F5F5</color>
+    <color name="font_color">#FFFFFF</color>
+    <color name="edit_fouce">#333333</color>
+    <color name="edit_nofouce">#afafaf</color>
+    
+    <color name="font_text_color">#666666</color>
+    <color name="font_text_hit_color">#ff7200</color>
+    <color name="font_text_info">#898986</color>
+     <color name="font_hint_main_color">#10a75a</color>
+    <color name="font_hint_second_color">#ed6b2f</color>
+    <color name="font_strong_color">#666666</color>
+    <color name="font_weak_coloe">#8c8c8c</color>
+    <color name="font_shouye_color">#707070</color>
+    <color name="font_right_color">#ff6400</color>
+    
+    <color name="list_item_press">#f0f0f0</color>
+    <color name="list_item_normal">#ffffff</color>
+    
+    <color name="font_tab_color">#F99503</color>
+ 
+     <color name="gray_font">#818181</color>
+     <color name="devide_line">#d9d9d9</color>
+     <color name="alterdialog_button_press">#e0e0e0</color>
+     <color name="alterdialog_button_nomal">#ffffff</color>
+     <color name="topupbk">#e0000000</color>
+     
+
+    <color name="white">#ffffff</color>
+     <color name="canlendar_text_color">#323232</color>
+
+ <color name="hit_color">#afafaf</color>
+     
+</resources>

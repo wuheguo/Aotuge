@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="40.5dp"
+    android:background="@drawable/custom_list_item_bg"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+         android:background="@color/white"
+        android:layout_height="40dp">
+        <TextView 
+            android:id="@+id/tx_tab"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="已选方向:"
+            android:gravity="center_vertical"
+            android:textColor="@color/font_strong_color"
+            android:textSize="@dimen/font_16"/>
+          <TextView 
+            android:id="@+id/tx_selcet_info"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="最多选择3个方向"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/tx_tab"
+            android:textColor="@color/font_tab_color"
+            android:textSize="@dimen/font_16"/>
+          <RelativeLayout android:id="@+id/rl_next"
+              android:layout_width="100dp"
+              android:layout_height="match_parent"
+              android:layout_alignParentRight="true">
+             <!--  <ImageView
+              android:id="@+id/im_next"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:layout_alignParentRight="true"
+              android:background="@drawable/black_next"
+              android:layout_centerVertical="true"
+              android:layout_marginRight="10dp"
+              android:contentDescription="@string/app_name"/> -->
+          </RelativeLayout>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/devide_line" />
+      <com.aotu.baseview.CustomGridView 
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:horizontalSpacing="5dp"
+        android:verticalSpacing="10dp"
+        android:numColumns="3" 
+        android:background="#d9d9d9"  
+               
+      />
+</LinearLayout>

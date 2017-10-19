@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include
+        android:id="@+id/header_bar"
+        layout="@layout/header" />
+    <ScrollView 
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         <LinearLayout  
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+               <TextView
+                   android:id="@+id/tx_"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginLeft="18dp"
+                   android:layout_marginTop="10dp"
+                   android:text="提现金额" />
+
+    <EditText
+        android:id="@+id/ed_amount"
+        style="@style/customeditnumber"
+        android:layout_marginTop="5dp"
+        android:ems="10" >
+        <requestFocus />
+    </EditText>
+     <TextView
+         android:id="@+id/tx_money"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="18dp"
+         android:textSize="@dimen/font_14"
+         android:textColor="@color/font_right_color"
+         android:text=""/>
+
+  <TextView
+        
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="18dp"
+         android:layout_marginTop="15dp"
+         android:text="提现方式"/>
+
+  <RelativeLayout
+      android:id="@+id/rl_way"
+      android:layout_marginTop="5dp"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content" >
+
+      
+
+      <TextView
+          android:id="@+id/tx_way"
+          style="@style/customText"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:text="支付宝" />
+    
+       <ImageView 
+                  
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                      android:layout_marginRight="25.0dip"
+                     android:layout_alignParentRight="true"
+                     android:contentDescription="@string/app_name"
+                     android:layout_centerVertical="true"
+                     android:background="@drawable/next_side"/>
+
+  </RelativeLayout>
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="18dp"
+         android:layout_marginTop="15dp"
+         android:text="支付宝账号" />
+    
+      <RelativeLayout
+        android:id="@+id/r_account"
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+     <EditText
+        android:id="@+id/ed_account"
+        style="@style/customeditname"  
+        android:hint="请填写你的支付宝账号">
+      </EditText>
+       
+    </RelativeLayout>
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="18dp"
+         android:layout_marginTop="15dp"
+         android:text="请填写你的真实姓名" />
+    
+      <RelativeLayout
+        android:id="@+id/r_location"
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+     <EditText
+        android:id="@+id/ed_location"
+        style="@style/customeditname"  
+        android:hint="姓名">
+      </EditText>
+       
+    </RelativeLayout>
+  
+    <Button
+        android:id="@+id/bn_save"
+        style="@style/custombutton"
+        android:layout_marginTop="24dp"
+        android:text="提交申请" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

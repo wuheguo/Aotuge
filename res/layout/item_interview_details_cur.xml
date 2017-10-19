@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="121dp"
+    android:background="@drawable/custom_list_item_bg"
+    android:orientation="vertical" >
+          <TextView
+            android:id="@+id/tx_info"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="30dp"
+            android:gravity="left|center_vertical"
+            android:text="浙江省网页制作大赛一等奖"
+            android:textColor="@color/font_strong_color"
+            android:textSize="@dimen/font_16" />
+          <TextView
+            android:id="@+id/tx_info1"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="30dp"
+            android:gravity="left|center_vertical"
+            android:text="浙江省网页制作大赛一等奖"
+            android:textColor="@color/font_weak_coloe"
+            android:textSize="@dimen/font_14" />
+          <TextView   
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/devide_line"/>
+          <LinearLayout  
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+              <Button
+                android:id="@+id/bn_left"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@drawable/interview_left_bn_bg"
+                android:gravity="center"
+                android:text="取消面试"
+                android:textColor="@color/font_right_color"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="15sp" />
+            <Button
+                android:layout_marginRight="5dp"
+                android:id="@+id/bn_right"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+              
+                android:background="@drawable/interview_right_bn_bg"
+                android:gravity="center"
+                android:text="已参加"
+                android:textColor="@color/whites"
+                android:textSize="15sp" />
+              
+          </LinearLayout>
+  
+      
+
+</LinearLayout>

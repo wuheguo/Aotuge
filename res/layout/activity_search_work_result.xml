@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_bg"
+    android:orientation="vertical" >
+    <include
+        android:id="@+id/header_bar"
+        layout="@layout/header" />
+      <Button  
+        android:id="@+id/bn_add"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:text="申请职位"
+        style="@style/custombutton"/>
+   
+    <com.aotu.baseview.CustomListView    
+     android:layout_below="@+id/header_bar"
+     android:id="@+id/list_view"
+     android:layout_above="@+id/bn_add"
+     android:background="@color/white"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:divider="@color/devide_line"
+     android:dividerHeight="1.0px"
+     />
+     
+     <RelativeLayout
+            android:id="@+id/rl_no_work"
+            android:layout_below="@+id/header_bar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/iv_no_work"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/no_intention"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:id="@+id/tv_no_work"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/iv_no_work"
+                android:layout_centerHorizontal="true"
+                android:text="没有搜索到你想要的工作"
+                android:textColor="@color/gray_font" />
+        </RelativeLayout>
+</RelativeLayout>

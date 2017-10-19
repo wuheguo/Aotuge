@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:minHeight="90dp"
+    android:background="@color/whites">
+    
+    <TextView
+            android:id="@+id/tx_tip"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:gravity="center"
+            android:text=""
+            android:textColor="@color/font_right_color"
+            android:textSize="@dimen/font_12" />
+   <Button
+                android:id="@+id/bn_accept"
+                android:layout_width="80dp"
+                android:layout_height="36dp"
+                android:background="@drawable/custom_bn_bg"
+                android:gravity="center"
+                android:visibility="visible"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:text="去评价"
+                android:textColor="@color/custom_dialog_right_text"
+                android:textSize="15sp" />
+    
+     <RelativeLayout
+         android:id="@+id/rl_info"
+         android:layout_toLeftOf="@+id/bn_accept"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:background="@color/whites">
+    <TextView
+            android:id="@+id/tx_company"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="30dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+           
+            android:textColor="@color/font_strong_color"
+            android:textSize="@dimen/font_16" />
+   
+        <TextView
+            android:id="@+id/tx_description"
+            android:layout_below="@+id/tx_info"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp" 
+            android:layout_height="25dp"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            
+            android:textColor="@color/custom_dialog_left_text"
+            android:textSize="@dimen/font_15" />
+
+        <TextView
+            android:id="@+id/tx_info"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:gravity="left|center_vertical"
+            
+            android:textColor="@color/custom_dialog_left_text"
+            android:textSize="@dimen/font_15" />
+
+    </RelativeLayout>
+</RelativeLayout>

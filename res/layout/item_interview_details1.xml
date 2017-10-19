@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:background="@drawable/custom_list_item_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/r_line"
+        android:layout_marginLeft="10dp"
+        android:layout_width="12dp"
+        android:layout_height="50dp" >
+
+        <ImageView
+            android:id="@+id/im_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/interview_circle_1"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_alignBaseline="@+id/im_circle"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/im_circle"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="2dp"
+            android:background="@color/font_right_color" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tx_interview_tab1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/r_line"
+        android:textColor="@color/font_strong_color"
+        android:textSize="@dimen/font_16" />
+
+    <TextView
+        android:id="@+id/tx_interview_tab2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tx_interview_tab1"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/r_line"
+        android:textColor="@color/font_weak_coloe"
+        android:textSize="@dimen/font_14" />
+
+</RelativeLayout>

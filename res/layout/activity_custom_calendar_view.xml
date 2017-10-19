@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@color/white"
+    android:orientation="vertical" >
+    <include
+        android:id="@+id/header_bar"
+        layout="@layout/header" />
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#f6f1ea">
+
+        <ImageButton
+            android:id="@+id/btnPreMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="33dip"
+            android:layout_toLeftOf="@+id/tvCurrentMonth"
+            
+            android:background="@drawable/back_icon" />
+
+        <ImageButton
+            android:id="@+id/btnNextMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="33dip"
+            android:layout_toRightOf="@+id/tvCurrentMonth"
+            android:background="@drawable/black_next" />
+
+        <TextView
+            android:id="@+id/tvCurrentMonth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="11月"
+            android:textColor="#323232"
+            android:textSize="22sp" />
+
+        
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical"
+         >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="20dip"
+            android:layout_marginBottom="2dip"
+            android:layout_marginTop="2dip" >
+
+            <TableRow>
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/sunday"
+                    android:textColor="@color/canlendar_text_color" />
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/monday"
+                    android:textColor="@color/canlendar_text_color" />
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/thesday"
+                    android:textColor="@color/canlendar_text_color" />
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/wednesday"
+                    android:textColor="@color/canlendar_text_color" />
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/thursday"
+                    android:textColor="@color/canlendar_text_color" />
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/friday"
+                    android:textColor="@color/canlendar_text_color" />
+
+                <TextView
+                    style="@style/dateStyle"
+                    android:text="@string/saturday"
+                    android:textColor="@color/canlendar_text_color" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="15dp">
+    <com.aotu.baseview.CustomListView
+        android:id="@+id/list_view"  
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        
+        android:layout_height="120dp">
+      
+    </com.aotu.baseview.CustomListView>
+      <TextView
+        android:id="@+id/tx_no_data"  
+        android:layout_width="match_parent"
+        android:text="没有面试信息"
+        android:textColor="@color/hit_color"
+        android:textSize="@dimen/font_14"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_height="120dp"/>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/vp_calendar"
+            android:layout_above="@+id/list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+          
+            android:background="@color/white" >
+        </android.support.v4.view.ViewPager>
+       
+    </RelativeLayout>
+   
+
+</LinearLayout>

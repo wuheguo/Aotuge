@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp" 
+        android:background="@color/whites">
+
+        <ImageView
+            android:id="@+id/title_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/home_list_item_title"
+            android:contentDescription="@string/app_name" />
+
+        <TextView
+            android:id="@+id/tx_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/title_image"
+            android:gravity="center_vertical"
+            android:text="基本资料"
+            android:textColor="@color/font_strong_color"
+            android:textSize="@dimen/font_16" />
+
+        <RelativeLayout
+            android:id="@+id/rl_next"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true" >
+        </RelativeLayout>
+    </RelativeLayout>
+      <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/devide_line" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+       
+         android:background="@color/whites" >
+
+        <EditText
+            android:id="@+id/tx_company"
+            style="@style/customedittext3"
+            android:layout_toRightOf="@+id/tx_name_tab"
+            android:hint="真实姓名" />
+
+        <TextView
+            android:id="@+id/tx_name_tab"
+            android:layout_width="80dp"
+            android:layout_marginLeft="10dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="left|center_vertical"
+            android:text="姓名"
+            android:textColor="@color/custom_dialog_left_text"
+            android:textSize="@dimen/font_16" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        
+         android:background="@color/whites">
+
+        <TextView
+            android:id="@+id/tx_sex_tab"
+            android:layout_width="80dp"
+            android:layout_marginLeft="10dp" 
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:text="性别"
+            android:textColor="@color/custom_dialog_left_text"
+            android:textSize="@dimen/font_16" />
+
+        <TextView
+            android:id="@+id/tx_sex"
+            style="@style/customtext1"
+            android:layout_toRightOf="@+id/tx_sex_tab"
+            android:hint="请填写" />
+    </RelativeLayout>
+    
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        
+         android:background="@color/whites">
+
+        <TextView
+            android:id="@+id/tx_birthday_tab"
+            android:layout_width="80dp"
+            android:layout_marginLeft="10dp" 
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:text="出生年月"
+            android:textColor="@color/custom_dialog_left_text"
+            android:textSize="@dimen/font_16" />
+
+        <TextView
+            android:id="@+id/tx_birthday"
+            style="@style/customtext1"
+            android:layout_toRightOf="@+id/tx_birthday_tab"
+            android:hint="请填写" />
+    </RelativeLayout>
+    
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        
+         android:background="@color/whites">
+
+        <TextView
+            android:id="@+id/tx_native_tab"
+            android:layout_width="80dp"
+            android:layout_marginLeft="10dp" 
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:gravity="left|center_vertical"
+            android:text="籍贯"
+            android:textColor="@color/custom_dialog_left_text"
+            android:textSize="@dimen/font_16" />
+
+        <TextView
+            android:id="@+id/tx_native"
+            style="@style/customtext1"
+            android:layout_toRightOf="@+id/tx_native_tab"
+            android:hint="请填写" />
+    </RelativeLayout>
+    
+
+</LinearLayout>

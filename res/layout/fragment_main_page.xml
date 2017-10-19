@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_bg">
+  <include
+        android:id="@+id/header_bar"
+        layout="@layout/header" />
+ <!--  <com.desarrollodroide.libraryfragmenttransactionextended.SlidingRelativeLayout
+        android:id="@+id/fragment_place"
+        android:layout_below="@+id/header_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </com.desarrollodroide.libraryfragmenttransactionextended.SlidingRelativeLayout> -->
+    <FrameLayout
+        android:windowAnimationStyle="@style/AnimBottom"
+        android:id="@+id/fragment_place"
+        android:layout_below="@+id/header_bar"
+        android:background="@color/transparent"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="480dp">
+    </FrameLayout>
+</RelativeLayout>

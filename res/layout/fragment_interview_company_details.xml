@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/view_bg" >
+
+    <LinearLayout  
+    android:layout_width="match_parent"
+   
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <TextView
+        android:id="@+id/tx_company"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+       
+      
+        android:textColor="@color/font_strong_color"
+        android:textSize="@dimen/font_16" />
+
+    <TextView
+        android:id="@+id/tx_company_property"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+         
+        android:layout_marginLeft="10dp"
+        android:text="公司性质"
+        android:textColor="@color/font_weak_coloe"
+        android:textSize="@dimen/font_14" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+              android:layout_marginTop="5dp"
+              android:layout_marginBottom="10dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tx_company_property_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="民营"
+                android:textColor="@color/font_weak_coloe"
+                android:textSize="@dimen/font_14" />
+
+            <TextView
+                android:layout_width="0.5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/devide_line" />
+
+            <TextView
+                android:id="@+id/tx_company_size_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100-200人"
+                android:textColor="@color/font_weak_coloe"
+                android:textSize="@dimen/font_14" />
+
+          
+        </LinearLayout>
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="160dp"
+    android:layout_marginTop="5dp"
+    android:visibility="gone"
+    android:background="@drawable/custom_list_item_bg"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+          <ImageView
+                android:id="@+id/title_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/home_list_item_title"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name" />
+        <TextView 
+            android:id="@+id/tx_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/title_image"
+            android:layout_marginLeft="5dp"
+            android:text="公司评价"
+            android:gravity="center_vertical"
+            android:textColor="@color/font_strong_color"
+            android:textSize="@dimen/font_16"/>
+         
+          <RelativeLayout android:id="@+id/rl_next"
+              android:layout_width="100dp"
+              android:visibility="gone"
+              android:layout_height="match_parent"
+              android:layout_alignParentRight="true">
+              
+              <ImageView
+              android:id="@+id/im_next"
+              android:layout_height="wrap_content"
+              android:layout_width="wrap_content"
+              android:layout_alignParentRight="true"
+              android:background="@drawable/black_next"
+              android:layout_centerVertical="true"
+              android:layout_marginRight="10dp"
+              android:contentDescription="@string/app_name"/>
+          </RelativeLayout>
+         
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/devide_line" />
+    
+     <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/whites" >
+        <RelativeLayout
+            android:onClick="onTotal"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/im_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/wu_jiao_xing_big1" />
+        </RelativeLayout>
+          <TextView
+            android:id="@+id/tx_total_score"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_gravity="right|center_vertical"
+            android:layout_marginRight="10dp"
+            android:gravity="right|center_vertical"
+            android:text="0分"
+            android:textColor="@color/custom_dialog_left_text"
+            android:textSize="@dimen/font_16" />
+          
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/devide_line" />
+     <com.aotu.baseview.CustomGridView 
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:horizontalSpacing="10dp"
+        android:verticalSpacing="5dp"
+        android:numColumns="1" 
+        android:background="@color/whites"            
+      />
+    
+</LinearLayout>
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    
+    android:layout_marginTop="5dp"
+    android:orientation="vertical"
+    android:background="@drawable/custom_list_item_bg">
+  
+    <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="40dp">
+          <ImageView
+                android:id="@+id/title_image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/home_list_item_title"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name" />
+        <TextView 
+            android:id="@+id/tx_name1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/title_image1"
+            android:layout_marginLeft="5dp"
+            android:text="公司介绍"
+            android:gravity="center_vertical"
+            android:textColor="@color/font_strong_color"
+            android:textSize="@dimen/font_16"/>
+    </RelativeLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="@color/devide_line" />
+    <ScrollView   
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout 
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:orientation="vertical">
+              <TextView   
+                  android:id="@+id/company_info"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="10dp"
+                  android:padding="10dp"
+                  android:textSize="@dimen/font_14"
+                  android:textColor="@color/custom_dialog_left_text"/>
+            
+        </LinearLayout>
+    </ScrollView>
+    </LinearLayout>
+  
+
+</LinearLayout>

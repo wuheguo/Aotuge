@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="480dp"
+    android:background="@color/transparent" >
+ <RelativeLayout
+   
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="true"
+    android:background="@color/transparent" >
+    <LinearLayout
+        android:id="@+id/l_tab"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="40dp" 
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_22"
+            android:gravity="bottom|center"
+            android:maxLines="1"
+            android:background="@drawable/home_page_tit_new"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/l_tab_mid"
+        android:descendantFocusability= "blocksDescendants"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/l_tab"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tx_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+             android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+           
+            android:textColor="@color/font_right_color"
+            android:textSize="@dimen/font_16" />
+
+        <TextView
+            android:id="@+id/tx_salary_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="10dp"
+            android:text="公司性质"
+            android:textColor="@color/font_right_color"
+            android:textSize="@dimen/font_14" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+             android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tx_graduate_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="民营"
+                android:textColor="@color/font_weak_coloe"
+                android:textSize="@dimen/font_14" />
+
+            <TextView
+                android:layout_width="0.5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/devide_line" />
+
+            <TextView
+                android:id="@+id/tx_city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100-200人"
+                android:textColor="@color/font_weak_coloe"
+                android:textSize="@dimen/font_14" />
+            
+             <TextView
+                android:layout_width="0.5dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@color/devide_line" />
+
+            <TextView
+                android:id="@+id/tx_type_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100-200人"
+                android:textColor="@color/font_weak_coloe"
+                android:textSize="@dimen/font_14" />
+            
+
+            <TextView
+                android:id="@+id/tx_update_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:text="100-200人"
+                android:textColor="@color/font_weak_coloe"
+                android:textSize="@dimen/font_14" />
+        </LinearLayout>
+        <Button 
+            style="@style/homepagechildbutton"
+            android:focusable = "false"
+             android:layout_marginTop="10dp"
+        android:text="职位亮点"
+      
+            />
+       <com.aotu.baseview.CustomGridView
+     
+        android:focusable = "false"
+        android:id="@+id/grid_view"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"    
+        android:background="@color/whites"
+        android:horizontalSpacing="10dp"
+        android:numColumns="2"
+        android:padding="10dp"
+        android:layout_marginTop="5dp"
+        android:verticalSpacing="5dp" />
+      
+    </LinearLayout>
+    
+      <RelativeLayout 
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/l_tab_mid"
+        android:layout_marginLeft="20dp"
+      
+        android:layout_marginRight="20dp">
+       <Button 
+           android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/home_page_child_bottom_bg"></Button>
+      <Button  
+        android:id="@+id/bn_ok" 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/font_14"
+        android:text = "投递"
+        android:background="@drawable/home_page_child_bottom"/>
+        
+    </RelativeLayout>
+   
+  </RelativeLayout>   
+
+</RelativeLayout>

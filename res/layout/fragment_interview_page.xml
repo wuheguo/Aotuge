@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_bg">
+      <include
+        android:id="@+id/header_bar"
+        layout="@layout/header" />
+      
+     
+
+        <LinearLayout
+            android:id="@+id/my_collect_tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_centerInParent="true"
+            android:layout_below="@+id/header_bar"
+            android:background="@color/whites"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tx_tab_left"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="面试邀请"
+              
+                android:textColor="@color/member_upgrade_tab_color"
+                android:textSize="@dimen/font_15" 
+                android:background="@drawable/custom_tab_bg"/>
+ <TextView
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/devide_line" />
+            <TextView
+                android:id="@+id/tx_tab_center"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="等待面试"
+                android:textColor="@color/member_upgrade_tab_color"
+                android:textSize="@dimen/font_15" 
+            android:background="@drawable/custom_tab_bg"/>
+<TextView
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/devide_line" />
+            <TextView
+                android:id="@+id/tx_tab_right"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="已完成"
+                android:textColor="@color/member_upgrade_tab_color"
+                android:textSize="@dimen/font_15" 
+                android:background="@drawable/custom_tab_bg"/>
+            <TextView
+        android:layout_width="1px"
+        android:layout_height="match_parent"
+        android:background="@color/devide_line" />
+            <TextView
+                android:id="@+id/tx_tab_right1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="已投递"
+                android:textColor="@color/member_upgrade_tab_color"
+                android:textSize="@dimen/font_15" 
+                android:background="@drawable/custom_tab_bg"/>
+        </LinearLayout>
+        <TextView
+         android:id="@+id/line_id"
+          android:layout_below="@+id/my_collect_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        android:background="@color/devide_line" />
+      <RelativeLayout 
+           android:layout_below="@+id/line_id"
+           android:layout_marginTop="15dp"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent" >
+        <com.aotu.baseview.CustomListView 
+     android:id="@+id/list_view"
+     android:layout_width="match_parent"
+           android:layout_height="wrap_content" 
+           android:dividerHeight="1px"
+           android:divider="@color/devide_line"
+           
+     />
+      </RelativeLayout>
+      
+        <RelativeLayout
+            android:id="@+id/rl_no_date"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+            <TextView
+                android:id="@+id/tv_no_work"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:gravity="center"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:text="没有相关数据,点击刷新"
+                android:textColor="@color/gray_font" />
+        </RelativeLayout>
+  
+ 
+
+</RelativeLayout>

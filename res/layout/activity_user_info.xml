@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <include
+        android:id="@+id/header_bar"
+        layout="@layout/header" />
+    <ScrollView 
+         android:layout_width="match_parent"
+         android:layout_height="match_parent">
+         <LinearLayout  
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:orientation="vertical">
+             
+               <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="95dp"
+                android:visibility="gone"
+                android:background="@color/whites" >
+                <TextView   
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="头像"
+                    
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="18dp"/>
+
+                <ImageView
+                    android:id="@+id/user_head_im"
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="17dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/user1"
+                    android:contentDescription="@string/app_name" />
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="75dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="17dp"
+                     android:layout_alignParentRight="true"
+                    android:background="@drawable/headmak"
+                    android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="15dp"
+        android:text="真实姓名" />
+
+    <EditText
+        android:id="@+id/ed_name"
+        style="@style/customeditname"
+        android:layout_marginTop="5dp"
+        android:ems="10" >
+        <requestFocus />
+    </EditText>
+
+  <TextView
+        
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="18dp"
+         android:layout_marginTop="15dp"
+         android:text="性别"/>
+
+  <RelativeLayout
+      android:id="@+id/rl_sex"
+      android:layout_marginTop="5dp"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content" >
+
+      
+
+      <TextView
+          android:id="@+id/tx_sex"
+          style="@style/customText"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:text="请选择性别" />
+    
+       <ImageView 
+                  
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                      android:layout_marginRight="25.0dip"
+                     android:layout_alignParentRight="true"
+                     android:contentDescription="@string/app_name"
+                     android:layout_centerVertical="true"
+                     android:background="@drawable/next_side"/>
+
+  </RelativeLayout>
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="18dp"
+         android:layout_marginTop="15dp"
+         android:text="身份证号" />
+    
+      <RelativeLayout
+        android:id="@+id/r_city"
+        android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+     <EditText
+        android:id="@+id/ed_code"
+        style="@style/customeditname"  
+        android:hint="请输入18位身份证号">
+      </EditText>
+       
+    </RelativeLayout>
+    
+     <TextView
+       
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="18dp"
+         android:layout_marginTop="15dp"
+         android:text="籍贯" />
+    
+      <RelativeLayout
+        android:id="@+id/rl_salary"
+          android:layout_marginTop="5dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+      <ImageView 
+                    
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                      android:layout_marginRight="25.0dip"
+                     android:layout_alignParentRight="true"
+                     android:contentDescription="@string/app_name"
+                     android:layout_centerVertical="true"
+                     android:background="@drawable/next_side"/>
+
+      <TextView
+          android:id="@+id/tx_salary"
+          style="@style/customText"
+          android:layout_alignParentTop="true"
+          android:layout_centerHorizontal="true"
+          android:hint="请选择你的籍贯" />
+
+    </RelativeLayout>
+       <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="18dp"
+         android:layout_marginTop="15dp"
+         android:text="毕业院校" />
+    
+      <RelativeLayout
+            android:layout_marginTop="5dp"
+          android:id="@+id/rl_school"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/tx_school"
+            style="@style/customText"
+            android:hint="请选择你的大学院校" />
+
+     <ImageView 
+                   
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                      android:layout_marginRight="25.0dip"
+                     android:layout_alignParentRight="true"
+                     android:contentDescription="@string/app_name"
+                     android:layout_centerVertical="true"
+                     android:background="@drawable/next_side"/>
+    </RelativeLayout>
+    
+      <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginTop="15dp"
+        android:text="填写专业" />
+
+    <EditText
+        android:id="@+id/ed_major"
+        style="@style/customeditname"
+        android:layout_marginTop="5dp"
+        android:ems="10" >
+        <requestFocus />
+    </EditText>
+     <!--  <TextView    
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_marginLeft="18dp"
+         android:layout_marginTop="15dp"
+         android:text="选择专业" />
+    
+      <RelativeLayout
+        android:id="@+id/rl_cv"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/tx_cv"
+            style="@style/customText"
+            android:gravity="center|right"
+             android:paddingRight="20dip" 
+            android:hint="请你选择你的专业" />
+
+      <ImageView 
+                   
+                     android:layout_width="wrap_content"
+                     android:layout_height="wrap_content"
+                      android:layout_marginRight="25.0dip"
+                     android:layout_alignParentRight="true"
+                     android:contentDescription="@string/app_name"
+                     android:layout_centerVertical="true"
+                     android:background="@drawable/next_side"/>
+    </RelativeLayout> -->
+    <Button
+        android:id="@+id/bn_save"
+        style="@style/custombutton"
+        android:layout_marginTop="24dp"
+        android:text="保存" />
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.auto.aotuge"
+    android:versionCode="3"
+    android:versionName="1.3" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="15" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-feature    android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_MMS" />
+    <uses-permission android:name="android.permission.RECEIVE_WAP_PUSH" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:name="com.aotu.aotuge.AotugeApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.aotu.activity.SplashActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.aotu.activity.GuideViewActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.LogonActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.FindPasswordGetCodeActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.ChangePasswordGetCodeActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.MainActivityFragment"  android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.RegisterGetCodeActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.RegisterActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.SchoolActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.DirectionsActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.WorkPlaceActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.PersonCurriculumVitaeActivity" android:windowSoftInputMode="adjustPan" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.SearchWorkActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.SetIntentionActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.SearchWorkResultActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.PersonEducationActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.PersonInternshipActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.PersonAssociationActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.PersonAwardsActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.PersonLanguagesActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.AboutActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.MyMessageActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.ReconciliationsActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.UserInfoActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.InterviewDetailsPreCompleteActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.InterviewDetailsCurCompleteActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.InterviewDetailsCompleteActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.InterviewCalendarViewActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.CompanyInfoActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.IntentionList" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.InterviewScoreActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.CVListActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.TiXianActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.uploadphoto.UploadPhotoAgentActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.uploadphoto.CropImageActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.uploadphoto.MonitoredActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.activity.H5Activity" android:screenOrientation="portrait"></activity>
+                <activity android:name="com.aotu.activity.EntranceTicketActivity" android:screenOrientation="portrait"></activity>
+                 <activity android:name="com.aotu.activity.EntranceTicketImageActivity" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.aotu.baseview.CustomPopupMenu" android:theme="@style/MyDialogStyleBottom" />
+    </application>
+
+</manifest>

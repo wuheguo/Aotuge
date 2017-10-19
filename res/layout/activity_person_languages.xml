@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_bg">
+
+    <include
+        android:id="@+id/header_bar"
+        layout="@layout/header" />
+     
+
+  
+    <LinearLayout
+        android:id="@+id/l_bn"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+         android:background="@color/whites"
+         android:layout_alignParentBottom="true"
+         android:layout_marginBottom="10dp"
+         android:layout_marginLeft="17dp"
+         android:layout_marginRight="17dp"
+        android:layout_marginTop="15dp" >
+
+     <Button
+                android:id="@+id/bn_delete"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:background="@color/custom_dialog_left_bn"
+                android:gravity="center"
+                android:text="取消"
+                android:textColor="@color/custom_dialog_left_text"
+                
+                android:textSize="15sp" />
+
+          
+
+            <Button
+                android:layout_marginLeft="10dp"
+                android:id="@+id/bn_save"
+                android:layout_width="0dp"
+                android:layout_height="41dp"
+                android:layout_weight="1"
+                android:background="@color/custom_dialog_right_bn"
+                android:gravity="center"
+                android:text="保存"
+                android:textColor="@color/custom_dialog_right_text"
+                android:textSize="15sp" />
+    </LinearLayout>
+         <RelativeLayout
+      
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:layout_below="@+id/header_bar"
+        android:layout_above="@+id/l_bn" >
+
+        <com.aotu.baseview.CustomListView
+            android:id="@+id/list_view"
+            android:dividerHeight="10dp"
+            android:divider="#F5F5F5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+       
+    </RelativeLayout>
+    
+      
+</RelativeLayout>

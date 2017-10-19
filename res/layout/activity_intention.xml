@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/view_bg"
+    android:orientation="vertical" >
+    <include
+        android:id="@+id/header_bar"
+        layout="@layout/header" />
+    
+     <RelativeLayout 
+           android:layout_width="match_parent"
+           android:layout_height="match_parent" >
+             <Button  
+        android:id="@+id/bn_add"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:text="增加意向"
+        android:onClick="onAdd"
+        style="@style/custombutton"/>
+        <com.aotu.baseview.CustomListView 
+            android:id="@+id/list_view"
+            android:layout_above="@+id/bn_add"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+      </RelativeLayout>
+   
+   
+</LinearLayout>
